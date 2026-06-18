@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
-import { tokenGroups } from "../../data/tokens.ts";
+import { tokenGroups } from "../../data/tokens";
 import {
     Panel,
     PanelHeader,
@@ -21,7 +21,7 @@ import {
 import { PhGithubLogo } from "@phosphor-icons/vue";
 import ExportModal from "./ExportModal.vue";
 import TokenRow from "./TokenRow.vue";
-import { presets } from "../../data/presets.ts";
+import { presets } from "../../data/presets";
 
 const exportOpen = ref(false);
 
