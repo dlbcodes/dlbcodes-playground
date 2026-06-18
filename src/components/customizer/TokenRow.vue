@@ -58,6 +58,7 @@ const onText = (v: string | number | null): void => {
             <input
                 type="color"
                 :value="value"
+                :aria-label="`${label} color`"
                 class="color-swatch size-8 shrink-0 cursor-pointer overflow-hidden rounded-md border border-border-default bg-transparent p-0"
                 @input="onSwatch"
             />
