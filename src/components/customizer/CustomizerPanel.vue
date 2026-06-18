@@ -128,10 +128,17 @@ const resetAll = (): void => {
         </PanelContent>
 
         <PanelFooter class="flex flex-col gap-y-2">
-            <Button variant="secondary" class="w-full" @click="resetAll">
-                Reset all
-            </Button>
+            <Button variant="secondary" class="w-full" @click="resetAll"
+                >Reset all</Button
+            >
             <Button class="w-full" @click="exportOpen = true">Get code</Button>
+            <a
+                href="https://my-design-system-beta.vercel.app/"
+                target="_blank"
+                class="text-center text-xs text-text-tertiary hover:text-text-primary transition-colors pt-2"
+            >
+                Documentation ↗
+            </a>
         </PanelFooter>
     </Panel>
 
