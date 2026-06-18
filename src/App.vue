@@ -11,8 +11,10 @@ const { overrides, set, applyPreset } = useThemeOverrides(previewEl);
 </script>
 
 <template>
-    <section class="flex h-dvh flex-col">
-        <div class="flex min-h-0 flex-1 flex-col gap-8 p-8 md:flex-row-reverse">
+    <div class="flex h-dvh flex-col">
+        <div
+            class="flex min-h-0 flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8 md:flex-row-reverse"
+        >
             <PreviewPane ref="previewPane" />
             <CustomizerPanel
                 :overrides="overrides"
@@ -20,5 +22,5 @@ const { overrides, set, applyPreset } = useThemeOverrides(previewEl);
                 @preset="applyPreset"
             />
         </div>
-    </section>
+    </div>
 </template>
