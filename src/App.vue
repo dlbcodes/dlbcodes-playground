@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
+import { Analytics } from "@vercel/analytics/vue";
 import PreviewPane from "./components/showcase/PreviewPane.vue";
 import CustomizerPanel from "./components/customizer/CustomizerPanel.vue";
 import { useThemeOverrides } from "./composables/useThemeOverrides";
@@ -23,4 +24,5 @@ const { overrides, set, applyPreset } = useThemeOverrides(previewEl);
             />
         </div>
     </div>
+    <Analytics />
 </template>
