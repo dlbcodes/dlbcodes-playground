@@ -7,7 +7,7 @@ import { useThemeOverrides } from "./composables/useThemeOverrides";
 const previewPane = ref<InstanceType<typeof PreviewPane> | null>(null);
 const previewEl = computed(() => previewPane.value?.root ?? null);
 
-const { overrides, set, reset, applyPreset } = useThemeOverrides(previewEl);
+const { overrides, set, applyPreset } = useThemeOverrides(previewEl);
 </script>
 
 <template>
@@ -17,7 +17,6 @@ const { overrides, set, reset, applyPreset } = useThemeOverrides(previewEl);
             <CustomizerPanel
                 :overrides="overrides"
                 @update="set"
-                @reset="reset"
                 @preset="applyPreset"
             />
         </div>
