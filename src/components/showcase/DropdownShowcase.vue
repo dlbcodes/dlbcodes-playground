@@ -6,7 +6,6 @@ import {
     DropdownItem,
     Separator,
     Button,
-    Avatar,
 } from "@dlbcodes/my-design-system";
 import {
     PhDotsThree,
