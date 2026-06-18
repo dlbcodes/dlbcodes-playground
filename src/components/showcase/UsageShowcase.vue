@@ -43,7 +43,7 @@ const usage = [
                             >
                         </span>
                     </div>
-                    <Progress :value="item.value" />
+                    <Progress :value="item.value" :label="item.label" />
                 </div>
             </PanelContent>
         </Panel>

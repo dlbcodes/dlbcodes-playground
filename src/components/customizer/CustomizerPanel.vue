@@ -64,8 +64,9 @@ const resetAll = (): void => {
                 as="a"
                 variant="icon"
                 size="icon"
+                aria-label="View source on GitHub"
             >
-                <PhGithubLogo />
+                <PhGithubLogo aria-hidden="true" />
             </Button>
         </PanelHeader>
 
