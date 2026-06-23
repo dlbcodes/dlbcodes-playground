@@ -18,7 +18,7 @@ import {
     SelectItem,
     FieldContent,
 } from "@dlbcodes/my-design-system";
-import { PhGithubLogo } from "@phosphor-icons/vue";
+import { PhGithubLogo, PhXLogo } from "@phosphor-icons/vue";
 import ExportModal from "./ExportModal.vue";
 import TokenRow from "./TokenRow.vue";
 import { presets } from "../../data/presets";
@@ -59,15 +59,26 @@ const resetAll = (): void => {
                     Override semantic tokens live.
                 </p>
             </div>
-            <Button
-                to="https://github.com/dlbcodes/dlbcodes-playground"
-                as="a"
-                variant="icon"
-                size="icon"
-                aria-label="View source on GitHub"
-            >
-                <PhGithubLogo aria-hidden="true" />
-            </Button>
+            <div class="flex items-end gap-x-1">
+                <Button
+                    to="https://github.com/dlbcodes/dlbcodes-playground"
+                    as="a"
+                    variant="icon"
+                    size="icon"
+                    aria-label="View source on GitHub"
+                >
+                    <PhGithubLogo aria-hidden="true" />
+                </Button>
+                <Button
+                    to="https://x.com/dlbcode"
+                    as="a"
+                    variant="icon"
+                    size="icon"
+                    aria-label="View source on GitHub"
+                >
+                    <PhXLogo aria-hidden="true" />
+                </Button>
+            </div>
         </PanelHeader>
 
         <PanelContent class="min-h-0 flex-1 overflow-auto no-scrollbar p-4">
