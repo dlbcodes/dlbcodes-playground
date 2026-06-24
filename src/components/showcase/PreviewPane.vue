@@ -3,6 +3,7 @@ import { ref } from "vue";
 import ShowcaseGrid from "../showcase/ShowcaseGrid.vue";
 import LoginPage from "./LoginPage.vue";
 // import SettingsPage from "./SettingsPage.vue";
+import PricingPage from "./PricingPage.vue";
 import {
     Tabs,
     TabsTrigger,
@@ -20,6 +21,7 @@ const triggerClass =
 const tabs = [
     { label: "Components", component: ShowcaseGrid },
     { label: "Sign in", component: LoginPage },
+    { label: "Pricing", component: PricingPage },
     // { label: "Settings", component: SettingsPage },
 ];
 </script>
