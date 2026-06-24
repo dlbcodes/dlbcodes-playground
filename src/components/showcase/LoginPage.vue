@@ -9,7 +9,7 @@ import { PhCube } from "@phosphor-icons/vue";
         <div class="flex w-full overflow-hidden rounded-2xl bg-bg-base">
             <!-- Form side -->
             <div
-                class="flex w-full items-center justify-center p-8 md:w-1/2 md:p-12"
+                class="flex flex-col w-full items-center justify-center p-8 md:w-1/2 md:p-12"
             >
                 <Panel class="w-full max-w-lg">
                     <PanelContent class="py-6 px-8">
@@ -54,7 +54,7 @@ import { PhCube } from "@phosphor-icons/vue";
 
                     <div class="relative">
                         <p
-                            class="text-2xl font-semibold leading-snug text-text-inverse"
+                            class="text-2xl font-semibold leading-snug text-text-inverse text-pretty"
                         >
                             Build accessible interfaces, themed with your own
                             tokens.
