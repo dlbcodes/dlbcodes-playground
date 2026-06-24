@@ -13,9 +13,9 @@ import { PhDotsThree, PhPlus } from "@phosphor-icons/vue";
 
 const members = [
     {
-        name: "Ana Silva",
+        name: "Joana A.",
         img: "https://i.pravatar.cc/120?img=10",
-        email: "ana@acme.co",
+        email: "joana@acme.co",
         role: "Owner",
         status: "success" as const,
     },
@@ -27,9 +27,9 @@ const members = [
         status: "success" as const,
     },
     // {
-    //     name: "Maria Costa",
+    //     name: "Ana S.",
     //     img: "https://i.pravatar.cc/120?img=9",
-    //     email: "maria@acme.co",
+    //     email: "ana@acme.co",
     //     role: "Member",
     //     status: "pending" as const,
     // },

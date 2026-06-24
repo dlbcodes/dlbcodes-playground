@@ -50,7 +50,7 @@ const resetAll = (): void => {
 
 <template>
     <Panel
-        class="flex w-full min-h-0 shrink-0 flex-col overflow-hidden max-h-[35vh] md:max-h-none md:w-80"
+        class="flex w-full min-h-0 shrink-0 flex-col max-h-[35vh] md:max-h-none md:w-80 overflow-visible md:overflow-auto"
     >
         <PanelHeader class="flex justify-between">
             <div class="flex flex-col items-start">
@@ -74,19 +74,21 @@ const resetAll = (): void => {
                     as="a"
                     variant="icon"
                     size="icon"
-                    aria-label="View source on GitHub"
+                    aria-label="View profile on X"
                 >
                     <PhXLogo aria-hidden="true" />
                 </Button>
             </div>
         </PanelHeader>
 
-        <PanelContent class="min-h-0 flex-1 overflow-auto no-scrollbar p-4">
+        <PanelContent
+            class="min-h-0 flex-1 overflow-visible md:overflow-auto no-scrollbar p-4"
+        >
             <div
                 class="flex flex-row gap-4 overflow-x-auto md:flex-col md:gap-3 md:overflow-x-visible"
             >
                 <!-- Preset: first column on mobile, full-width block on desktop -->
-                <div class="w-56 shrink-0 md:w-auto">
+                <div class="w-56 shrink-0 md:w-full">
                     <Field>
                         <FieldLabel>Preset</FieldLabel>
                         <FieldContent>
@@ -112,7 +114,7 @@ const resetAll = (): void => {
                     v-for="group in tokenGroups"
                     :key="group.title"
                     :default-open="true"
-                    class="w-56 shrink-0 md:w-auto"
+                    class="w-56 shrink-0 hidden md:flex md:flex-col md:w-auto"
                 >
                     <DisclosureTrigger
                         class="text-[10px] font-medium uppercase tracking-wide text-text-tertiary"
