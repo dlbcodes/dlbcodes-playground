@@ -13,7 +13,7 @@ export const presets: Preset[] = [
 	},
 	{
 		id: "neutral",
-		name: "Neutral (shadcn)",
+		name: "Neutral",
 		tokens: {
 			// Brand → near-black (shadcn's defining trait)
 			"brand-200": "#171717", // neutral-900 (--primary)

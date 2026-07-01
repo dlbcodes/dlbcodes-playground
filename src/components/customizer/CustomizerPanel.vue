@@ -146,7 +146,7 @@ const resetAll = (): void => {
             >
             <Button class="w-full" @click="exportOpen = true">Get code</Button>
             <a
-                href="https://my-design-system-beta.vercel.app/"
+                href="https://ui.dlbcodes.com/"
                 target="_blank"
                 class="text-center text-xs text-text-tertiary hover:text-text-primary transition-colors pt-2"
             >
