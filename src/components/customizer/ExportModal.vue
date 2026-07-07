@@ -9,7 +9,7 @@ import {
     ModalFooter,
     ModalClose,
     Button,
-} from "@dlbcodes/my-design-system";
+} from "@dlbcodes/ui";
 import { useClipboard } from "@vueuse/core";
 import { useThemeCss } from "../../composables/useThemeCss";
 

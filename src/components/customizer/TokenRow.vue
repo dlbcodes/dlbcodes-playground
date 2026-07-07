@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
-import { Field, FieldLabel, Input } from "@dlbcodes/my-design-system";
+import { Field, FieldLabel, Input } from "@dlbcodes/ui";
 import { PhHash } from "@phosphor-icons/vue";
 
 const props = defineProps<{

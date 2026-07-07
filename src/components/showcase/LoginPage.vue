@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LoginForm from "./LoginForm.vue";
-import { Panel, PanelContent } from "@dlbcodes/my-design-system";
+import { Panel, PanelContent } from "@dlbcodes/ui";
 import { PhCube } from "@phosphor-icons/vue";
 </script>
 

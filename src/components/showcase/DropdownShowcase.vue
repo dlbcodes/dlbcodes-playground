@@ -6,7 +6,7 @@ import {
     DropdownItem,
     Separator,
     Button,
-} from "@dlbcodes/my-design-system";
+} from "@dlbcodes/ui";
 import {
     PhDotsThree,
     PhPencilSimple,

@@ -9,7 +9,7 @@ import {
     Disclosure,
     DisclosureTrigger,
     DisclosureContent,
-} from "@dlbcodes/my-design-system";
+} from "@dlbcodes/ui";
 import {
     PhCube,
     PhPlant,

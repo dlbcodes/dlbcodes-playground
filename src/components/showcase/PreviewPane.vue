@@ -10,7 +10,7 @@ import {
     TabsList,
     TabsPanels,
     TabsContent,
-} from "@dlbcodes/my-design-system";
+} from "@dlbcodes/ui";
 
 const root = ref<HTMLElement | null>(null);
 defineExpose({ root });

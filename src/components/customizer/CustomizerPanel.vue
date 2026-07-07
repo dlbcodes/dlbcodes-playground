@@ -17,7 +17,7 @@ import {
     SelectContent,
     SelectItem,
     FieldContent,
-} from "@dlbcodes/my-design-system";
+} from "@dlbcodes/ui";
 import { PhGithubLogo, PhXLogo } from "@phosphor-icons/vue";
 import ExportModal from "./ExportModal.vue";
 import TokenRow from "./TokenRow.vue";
@@ -63,6 +63,7 @@ const resetAll = (): void => {
                 <Button
                     to="https://github.com/dlbcodes/dlbcodes-playground"
                     as="a"
+                    target="_blank"
                     variant="icon"
                     size="icon"
                     aria-label="View source on GitHub"
@@ -72,6 +73,7 @@ const resetAll = (): void => {
                 <Button
                     to="https://x.com/dlbcode"
                     as="a"
+                    target="_blank"
                     variant="icon"
                     size="icon"
                     aria-label="View profile on X"

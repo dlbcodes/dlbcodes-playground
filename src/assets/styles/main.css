@@ -1,10 +1,20 @@
 @import "tailwindcss";
-@import "@dlbcodes/my-design-system/tokens.css";
-@source "../../../node_modules/@dlbcodes/my-design-system/dist";
+@import "@dlbcodes/ui/tokens.css";
+@source "../../../node_modules/@dlbcodes/ui/dist";
 @import "./fonts.css" layer(utilities);
 
 @theme {
     --font-sans: "Geist", system-ui, sans-serif;
     --font-serif: "Instrument Serif", system-ui, sans-serif;
     --font-mono: "Geist Mono", ui-monospace, monospace;
+}
+
+@layer base {
+    html {
+        @apply antialiased;
+    }
+
+    body {
+        @apply min-h-dvh font-sans text-text-primary;
+    }
 }
